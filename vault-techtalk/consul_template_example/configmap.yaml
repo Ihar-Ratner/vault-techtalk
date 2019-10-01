@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-configmap
+data:
+  entrypoint.sh: |-
+    #!/bin/sh
+    cd /home/vagrant
+    ./sed.sh
+    # insert secrets what you want to get
+    cat << EOF > test.tpl
+    {{ with secret "secret/data/demo/first" }}
+    export SECRET_PASS={{ .Data.data.one }}
+    export SECRET_USER={{ .Data.data.two }}
+    {{ end }}
+    EOF
+    cat test.tpl
+    consul-template -config="config.hcl" -template=test.tpl:env.txt -once
+    cat env.txt
+    . ./env.txt
+    env | grep SECRET
+    echo "-----------------"
+    env | grep SECRET
+    sleep 36000
