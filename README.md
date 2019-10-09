@@ -28,4 +28,9 @@ vault kv put secret/demo/greek/alpha philosopher=plato
 vault kv put secret/demo/greek/beta god=zeus
 vault kv put secret/demo/greek/gamma mountain=olympus
 
-# In examples, replace ${NAMESPACE} and ${CLUSTER_IP} for yours. And
+### In kubernetes manifest replace ENV values for yours
+### env:
+        - name: VAULT_ADDR
+          value: http://35.184.238.131:8200 ---- need to replace
+        - name: VAULT_ROLE
+          value: vault-demo-default         ---- need to replace
