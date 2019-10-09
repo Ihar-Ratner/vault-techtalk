@@ -40,4 +40,5 @@ vault kv put secret/demo/greek/gamma mountain=olympus
         - name: VAULT_SECRETS
           value: <pleasechangeme>
           
+# Consul-template example
           
