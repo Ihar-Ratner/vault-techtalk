@@ -29,9 +29,9 @@ vault kv put secret/demo/greek/beta god=zeus
 vault kv put secret/demo/greek/gamma mountain=olympus
 
 ### In kubernetes manifest replace ENV values for yours
-### VAULT_ADDR - vault server ip address
-### VAULT_ROLE - kubernetes role for access in vault server
-### VAULT_SECRETS - path to your secrets in vault
+##### VAULT_ADDR - vault server ip address
+##### VAULT_ROLE - kubernetes role for access in vault server
+##### VAULT_SECRETS - path to your secrets in vault
 ### env:
         - name: VAULT_ADDR
           value: <pleasechangeme>
