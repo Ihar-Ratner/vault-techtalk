@@ -27,3 +27,5 @@ vault kv put secret/demo/second green=lantern poison=ivy
 vault kv put secret/demo/greek/alpha philosopher=plato
 vault kv put secret/demo/greek/beta god=zeus
 vault kv put secret/demo/greek/gamma mountain=olympus
+
+# In examples, replace ${NAMESPACE} and ${CLUSTER_IP} for yours. And
