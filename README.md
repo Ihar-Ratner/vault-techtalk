@@ -34,11 +34,11 @@ vault kv put secret/demo/greek/gamma mountain=olympus
 ##### VAULT_SECRETS - path to your secrets in vault
 ### env:
         - name: VAULT_ADDR
-          value: <pleasechangeme>
+          value: <please_change_me>
         - name: VAULT_ROLE
-          value: <pleasechangeme>
+          value: <please_change_me>
         - name: VAULT_SECRETS
-          value: <pleasechangeme>
+          value: <please_change_me>
           
 # Consul-template example
           
