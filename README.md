@@ -31,6 +31,8 @@ vault kv put secret/demo/greek/gamma mountain=olympus
 ### In kubernetes manifest replace ENV values for yours
 ### env:
         - name: VAULT_ADDR
-          value: http://35.184.238.131:8200 ---- need to replace
+          value: <pleasechangeme>
         - name: VAULT_ROLE
-          value: vault-demo-default         ---- need to replace
+          value: <pleasechangeme>
+        - name: VAULT_SECRETS
+          value: <pleasechangeme>
